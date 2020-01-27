@@ -1,6 +1,6 @@
 ---
 title: "hw_1"
-author: "Имя, Отчество, Фамилия"
+author: "Артём Игоревич Орехов"
 output: html_document
 ---
 
@@ -16,6 +16,8 @@ library(tidyverse)
 
 ```{r}
 # Ответ на задание 1.1
+integrate(dlnorm, mean = 3, sd = 0.5, lower = 25, upper = 50)
+# Ответ: 0.297 with absolute error < 3.3e-15
 ```
 
 
@@ -27,4 +29,6 @@ library(tidyverse)
 
 ```{r}
 # Ответ на задание 1.2
+integrate(dlnorm, lower = qnorm(p = 0.1, mean = 3, sd = 0.5), upper = qnorm(p = 0.9, mean = 3, sd = 0.5), stop.on.error = FALSE)
+# Ответ: 0.097 with absolute error < 1.1e-15
 ```
